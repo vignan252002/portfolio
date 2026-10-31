@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P Vignan | Full Stack Developer & MCA Candidate</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            500: '#06b6d4',
+                            600: '#0891b2',
+                            700: '#0e7490',
+                            900: '#164e63',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+        }
+        .dark .glass-card {
+            background: rgba(15, 23, 42, 0.75);
+            backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-300 min-h-screen flex flex-col">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full z-50 border-b border-slate-200 dark:border-slate-800 glass-card">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Brand Logo -->
+                <a href="#" class="flex items-center gap-2 font-bold text-xl tracking-tight text-slate-900 dark:text-white">
+                    <span class="w-8 h-8 rounded-lg bg-cyan-600 flex items-center justify-center text-white text-sm font-mono">PV</span>
+                    <span>P VIGNAN</span>
+                </a>
+
+                <!-- Desktop Nav -->
+                <div class="hidden md:flex items-center gap-6 text-sm font-medium">
+                    <a href="#about" class="hover:text-cyan-600 dark:hover:text-cyan-400 transition">About</a>
+                    <a href="#skills" class="hover:text-cyan-600 dark:hover:text-cyan-400 transition">Skills</a>
+                    <a href="#projects" class="hover:text-cyan-600 dark:hover:text-cyan-400 transition">Projects</a>
+                    <a href="#experience" class="hover:text-cyan-600 dark:hover:text-cyan-400 transition">Experience</a>
+                    <a href="#education" class="hover:text-cyan-600 dark:hover:text-cyan-400 transition">Education</a>
+                    <a href="#contact" class="hover:text-cyan-600 dark:hover:text-cyan-400 transition">Contact</a>
+                </div>
+
+                <!-- Actions -->
+                <div class="flex items-center gap-3">
+                    <button id="themeToggle" class="p-2 rounded-xl bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:text-cyan-600 transition">
+                        <i id="themeIcon" class="fas fa-sun text-yellow-500"></i>
+                    </button>
+                    <a href="https://github.com/vignan2025" target="_blank" rel="noopener noreferrer" class="p-2 rounded-xl bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:text-cyan-600 transition" title="GitHub Profile">
+                        <i class="fab fa-github text-lg"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/pardhi-vignan-783250436/" target="_blank" rel="noopener noreferrer" class="p-2 rounded-xl bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:text-cyan-600 transition" title="LinkedIn Profile">
+                        <i class="fab fa-linkedin text-lg"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="about" class="pt-32 pb-20 px-4 max-w-7xl mx-auto w-full flex-1 flex flex-col justify-center">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-8 space-y-6">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-cyan-100 dark:bg-cyan-950 text-cyan-700 dark:text-cyan-300 border border-cyan-200 dark:border-cyan-800">
+                    <span class="w-2 h-2 rounded-full bg-cyan-500 animate-pulse"></span> Open for Full-Stack & Software Developer Roles
+                </div>
+                <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight">
+                    Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-600">P Vignan</span>
+                </h1>
+                <p class="text-lg text-slate-600 dark:text-slate-300 leading-relaxed max-w-2xl">
+                    Master of Computer Applications (MCA) candidate at Aurora's PG College. Passionate about building robust full-stack web applications, decision engines, database systems, and interactive user interfaces using modern web technologies.
+                </p>
+
+                <!-- Action Buttons -->
+                <div class="flex flex-wrap gap-4 pt-4">
+                    <a href="#projects" class="px-6 py-3 rounded-xl bg-cyan-600 hover:bg-cyan-700 text-white font-semibold text-sm transition shadow-lg shadow-cyan-500/25 flex items-center gap-2">
+                        <i class="fas fa-code"></i> View Projects
+                    </a>
+                    <a href="https://github.com/vignan2025/ai-automation-take-home-assignment" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-xl border border-slate-300 dark:border-slate-700 hover:border-cyan-500 text-sm font-semibold transition flex items-center gap-2">
+                        <i class="fab fa-github"></i> Latest Assignment Repo
+                    </a>
+                </div>
+
+                <!-- Highlight Cards -->
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-6 border-t border-slate-200 dark:border-slate-800">
+                    <div class="p-4 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+                        <div class="text-2xl font-bold text-cyan-600 dark:text-cyan-400">7.4 CGPA</div>
+                        <div class="text-xs text-slate-500 dark:text-slate-400">MCA Postgraduate</div>
+                    </div>
+                    <div class="p-4 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+                        <div class="text-2xl font-bold text-cyan-600 dark:text-cyan-400">Full Stack</div>
+                        <div class="text-xs text-slate-500 dark:text-slate-400">Python, JS & React</div>
+                    </div>
+                    <div class="p-4 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+                        <div class="text-2xl font-bold text-cyan-600 dark:text-cyan-400">Hyderabad</div>
+                        <div class="text-xs text-slate-500 dark:text-slate-400">Location</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Profile Summary Card -->
+            <div class="lg:col-span-4">
+                <div class="p-6 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-xl space-y-6">
+                    <div class="flex items-center gap-4">
+                        <div class="w-16 h-16 rounded-2xl bg-gradient-to-tr from-cyan-500 to-blue-600 flex items-center justify-center text-white text-2xl font-bold">
+                            PV
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg">P Vignan</h3>
+                            <p class="text-xs text-slate-500 dark:text-slate-400">MCA Graduate (2024 - 2026)</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3 text-sm text-slate-600 dark:text-slate-300">
+                        <div class="flex items-center gap-3">
+                            <i class="fas fa-envelope text-cyan-500 w-5"></i>
+                            <a href="mailto:pardhivignan2@gmail.com" class="hover:underline">pardhivignan2@gmail.com</a>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fas fa-phone text-cyan-500 w-5"></i>
+                            <span>+91 7207515194</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fas fa-map-marker-alt text-cyan-500 w-5"></i>
+                            <span>Hyderabad, TG, India</span>
+                        </div>
+                    </div>
+
+                    <div class="pt-4 border-t border-slate-200 dark:border-slate-800 flex gap-2">
+                        <a href="https://www.linkedin.com/in/pardhi-vignan-783250436/" target="_blank" rel="noopener noreferrer" class="flex-1 py-2 px-3 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-center text-xs font-semibold transition flex items-center justify-center gap-1">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                        <a href="https://github.com/vignan2025" target="_blank" rel="noopener noreferrer" class="flex-1 py-2 px-3 rounded-xl bg-slate-800 hover:bg-slate-900 text-white text-center text-xs font-semibold transition flex items-center justify-center gap-1">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section id="skills" class="py-16 px-4 max-w-7xl mx-auto w-full">
+        <div class="text-center max-w-2xl mx-auto mb-12">
+            <h2 class="text-3xl font-bold tracking-tight">Technical Skills</h2>
+            <p class="text-sm text-slate-500 dark:text-slate-400 mt-2">Core programming languages, frameworks, backend technologies, and development tools.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Programming Languages -->
+            <div class="p-6 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-md">
+                <div class="w-10 h-10 rounded-xl bg-cyan-100 dark:bg-cyan-950 text-cyan-600 dark:text-cyan-400 flex items-center justify-center mb-4 text-xl">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3 class="font-bold text-lg mb-3">Languages</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 rounded-lg bg-slate-100 dark:bg-slate-800 text-xs font-medium">JavaScript (ES6)</span>
+                    <span class="px-3 py-1 rounded-lg bg-slate-100 dark:bg-slate-800 text-xs font-medium">Python</span>
+                    <span class="px-3 py-1 rounded-lg bg-slate-100 dark:bg-slate-800 text-xs font-medium">SQL</span>
+                </div>
+            </div>
+
+            <!-- Frontend -->
+            <div class="p-6 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-md">
+                <div class="w-10 h-10 rounded-xl bg-blue-100 dark:bg-blue-950 text-blue-600 dark:text-blue-400 flex items-center justify-center mb-4 text-xl">
+                    <i class="fab fa-react"></i>
+                </div>
+                <h3 class="font-bold text-lg mb-3">Frontend</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 rounded-lg bg-slate-100 dark:bg-slate-800 text-xs font-medium">React.js</span>
+                    <span class="px-3 py-1 rounded-lg bg-slate-100 dark:bg-slate-800 text-xs font-medium">HTML5</span>
+                    <span class="px-3 py-1 rounded-lg bg-slate-100 dark:bg-slate-800 text-xs font-medium">CSS3</span>
+                    <span class="px-3 py-1 rounded-lg bg-slate-100 dark:bg-slate-800 text-xs font-medium">Bootstrap</span>
+                </div>
+            </div>
+
+            <!-- Backend & Databases -->
+            <div class="p-6 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-md">
+                <div class="w-10 h-10 rounded-xl bg-purple-100 dark:bg-purple-950 text-purple-600 dark:text-purple-400 flex items-center justify-center mb-4 text-xl">
+                    <i class="fas fa-server"></i>
+                </div>
+                <h3 class="font-bold text-lg mb-3">Backend & DB</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 rounded-lg bg-slate-100 dark:bg-slate-800 text-xs font-medium">Node.js</span>
+                    <span class="px-3 py-1 rounded-lg bg-slate-100 dark:bg-slate-800 text-xs font-medium">Express.js</span>
+                    <span class="px-3 py-1 rounded-lg bg-slate-100 dark:bg-slate-800 text-xs font-medium">SQL Server</span>
+                </div>
+            </div>
+
+            <!-- Tools & Software -->
+            <div class="p-6 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-md">
+                <div class="w-10 h-10 rounded-xl bg-emerald-100 dark:bg-emerald-950 text-emerald-600 dark:text-emerald-400 flex items-center justify-center mb-4 text-xl">
+                    <i class="fas fa-tools"></i>
+                </div>
+                <h3 class="font-bold text-lg mb-3">Tools & IDEs</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 rounded-lg bg-slate-100 dark:bg-slate-800 text-xs font-medium">Git & GitHub</span>
+                    <span class="px-3 py-1 rounded-lg bg-slate-100 dark:bg-slate-800 text-xs font-medium">VS Code</span>
+                    <span class="px-3 py-1 rounded-lg bg-slate-100 dark:bg-slate-800 text-xs font-medium">PyCharm</span>
+                    <span class="px-3 py-1 rounded-lg bg-slate-100 dark:bg-slate-800 text-xs font-medium">MS Excel</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Projects Section -->
+    <section id="projects" class="py-16 px-4 max-w-7xl mx-auto w-full">
+        <div class="text-center max-w-2xl mx-auto mb-12">
+            <h2 class="text-3xl font-bold tracking-tight">Featured Projects</h2>
+            <p class="text-sm text-slate-500 dark:text-slate-400 mt-2">Hands-on applications and systems built during coursework and assignments.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Project 1: Take-Home Assignment -->
+            <div class="p-8 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-xl flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="px-3 py-1 rounded-full text-xs font-bold bg-cyan-100 dark:bg-cyan-950 text-cyan-700 dark:text-cyan-300">Featured System</span>
+                        <a href="https://github.com/vignan2025/ai-automation-take-home-assignment" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-cyan-500 transition text-lg">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">D2C Haircare COD RTO Optimization System</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed mb-4">
+                        An AI-driven automated decision engine, WhatsApp workflow simulator, and financial analytics dashboard built to evaluate Cash on Delivery (COD) orders, mitigate Return-To-Origin (RTO) operational costs, and optimize net profit margins.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-800 text-xs font-mono">HTML5</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-800 text-xs font-mono">Tailwind CSS</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-800 text-xs font-mono">JavaScript</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-800 text-xs font-mono">Decision Logic</span>
+                    </div>
+                </div>
+                <a href="https://github.com/vignan2025/ai-automation-take-home-assignment" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm font-semibold text-cyan-600 dark:text-cyan-400 hover:underline">
+                    View GitHub Repository <i class="fas fa-arrow-right text-xs"></i>
+                </a>
+            </div>
+
+            <!-- Project 2: Music Recommendation System -->
+            <div class="p-8 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-xl flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="px-3 py-1 rounded-full text-xs font-bold bg-purple-100 dark:bg-purple-950 text-purple-700 dark:text-purple-300">Full Stack Project</span>
+                        <a href="https://github.com/vignan2025" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-cyan-500 transition text-lg">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Music Recommendation System</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed mb-4">
+                        Designed and implemented a 3-tier web platform enabling users to browse music, play tracks, and receive customized recommendations based on listening history. Features an administrative portal for catalogue management.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-800 text-xs font-mono">Python</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-800 text-xs font-mono">SQL Server</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-800 text-xs font-mono">HTML/CSS</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-800 text-xs font-mono">JavaScript</span>
+                    </div>
+                </div>
+                <a href="https://github.com/vignan2025" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm font-semibold text-cyan-600 dark:text-cyan-400 hover:underline">
+                    View Profile on GitHub <i class="fas fa-arrow-right text-xs"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Internship & Experience Section -->
+    <section id="experience" class="py-16 px-4 max-w-7xl mx-auto w-full">
+        <div class="text-center max-w-2xl mx-auto mb-12">
+            <h2 class="text-3xl font-bold tracking-tight">Work Experience & Internship</h2>
+            <p class="text-sm text-slate-500 dark:text-slate-400 mt-2">Professional training and practical development experience.</p>
+        </div>
+
+        <div class="max-w-3xl mx-auto">
+            <div class="p-8 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-md">
+                <div class="flex flex-wrap justify-between items-start gap-4 mb-4">
+                    <div>
+                        <h3 class="text-xl font-bold">Full Stack Developer Intern</h3>
+                        <p class="text-sm text-cyan-600 dark:text-cyan-400 font-medium">Fratello Innotech Pvt Ltd</p>
+                    </div>
+                    <span class="px-3 py-1 rounded-full text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300">
+                        Internship Training
+                    </span>
+                </div>
+                <ul class="space-y-3 text-sm text-slate-600 dark:text-slate-300 list-disc list-inside leading-relaxed">
+                    <li>Developed and delivered the Music Recommendation System project using Python and web engineering practices.</li>
+                    <li>Integrated frontend UI elements with backend application logic and relational database instances.</li>
+                    <li>Gained hands-on practical experience across full-stack integration, API interaction, and code debugging.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Certifications Section -->
+    <section id="education" class="py-16 px-4 max-w-7xl mx-auto w-full">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <!-- Education Column -->
+            <div>
+                <h2 class="text-2xl font-bold mb-6 flex items-center gap-3">
+                    <i class="fas fa-graduation-cap text-cyan-500"></i> Academic Education
+                </h2>
+                <div class="space-y-6">
+                    <div class="p-6 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-md">
+                        <span class="text-xs font-bold text-cyan-600 dark:text-cyan-400">2024 - 2026</span>
+                        <h3 class="text-lg font-bold mt-1">Master of Computer Applications (MCA)</h3>
+                        <p class="text-xs text-slate-500 dark:text-slate-400">Aurora's PG College, Ramanthapur, Hyderabad</p>
+                        <p class="text-xs font-semibold text-slate-700 dark:text-slate-300 mt-2">Cumulative GPA: 7.4 / 10</p>
+                    </div>
+
+                    <div class="p-6 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-md">
+                        <span class="text-xs font-bold text-cyan-600 dark:text-cyan-400">2021 - 2024</span>
+                        <h3 class="text-lg font-bold mt-1">Bachelor of Computer Science</h3>
+                        <p class="text-xs text-slate-500 dark:text-slate-400">Adarsh Degree College, Mahabubnagar</p>
+                        <p class="text-xs font-semibold text-slate-700 dark:text-slate-300 mt-2">Cumulative GPA: 7.0 / 10</p>
+                    </div>
+
+                    <div class="p-6 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-md">
+                        <span class="text-xs font-bold text-cyan-600 dark:text-cyan-400">2019 - 2021</span>
+                        <h3 class="text-lg font-bold mt-1">Intermediate Education</h3>
+                        <p class="text-xs text-slate-500 dark:text-slate-400">Prathibha Junior College, Mahabubnagar</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certifications Column -->
+            <div>
+                <h2 class="text-2xl font-bold mb-6 flex items-center gap-3">
+                    <i class="fas fa-certificate text-cyan-500"></i> Certifications
+                </h2>
+                <div class="space-y-4">
+                    <div class="p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-xl bg-cyan-100 dark:bg-cyan-950 text-cyan-600 dark:text-cyan-400 flex items-center justify-center font-bold">1</div>
+                        <div>
+                            <h4 class="font-bold text-sm">Full-Stack Development Internship Certificate</h4>
+                            <p class="text-xs text-slate-500 dark:text-slate-400">Fratello Innotech Pvt Ltd</p>
+                        </div>
+                    </div>
+                    <div class="p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-xl bg-cyan-100 dark:bg-cyan-950 text-cyan-600 dark:text-cyan-400 flex items-center justify-center font-bold">2</div>
+                        <div>
+                            <h4 class="font-bold text-sm">HTML, CSS, JavaScript & Bootstrap</h4>
+                            <p class="text-xs text-slate-500 dark:text-slate-400">Web Development Coursework</p>
+                        </div>
+                    </div>
+                    <div class="p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-xl bg-cyan-100 dark:bg-cyan-950 text-cyan-600 dark:text-cyan-400 flex items-center justify-center font-bold">3</div>
+                        <div>
+                            <h4 class="font-bold text-sm">Python & SQL Certification</h4>
+                            <p class="text-xs text-slate-500 dark:text-slate-400">Backend Engineering Fundamentals</p>
+                        </div>
+                    </div>
+                    <div class="p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-xl bg-cyan-100 dark:bg-cyan-950 text-cyan-600 dark:text-cyan-400 flex items-center justify-center font-bold">4</div>
+                        <div>
+                            <h4 class="font-bold text-sm">MS Excel 2019 Certification</h4>
+                            <p class="text-xs text-slate-500 dark:text-slate-400">Data Management & Analytics</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Footer Section -->
+    <footer id="contact" class="mt-auto border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 py-12 px-4">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left">
+            <div>
+                <h3 class="text-xl font-bold">P Vignan</h3>
+                <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Full-Stack Developer | MCA Candidate</p>
+            </div>
+
+            <div class="flex gap-4">
+                <a href="https://github.com/vignan2025" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-cyan-600 hover:text-white transition flex items-center justify-center text-slate-700 dark:text-slate-300">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/pardhi-vignan-783250436/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-blue-600 hover:text-white transition flex items-center justify-center text-slate-700 dark:text-slate-300">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:pardhivignan2@gmail.com" class="w-10 h-10 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-emerald-600 hover:text-white transition flex items-center justify-center text-slate-700 dark:text-slate-300">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+
+            <p class="text-xs text-slate-500 dark:text-slate-400">
+                © 2026 P Vignan. Built with HTML & Tailwind CSS.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Dark Mode JavaScript -->
+    <script>
+        const themeToggleBtn = document.getElementById('themeToggle');
+        const themeIcon = document.getElementById('themeIcon');
+
+        themeToggleBtn.addEventListener('click', () => {
+            document.documentElement.classList.toggle('dark');
+            const isDark = document.documentElement.classList.contains('dark');
+            themeIcon.className = isDark ? 'fas fa-sun text-yellow-500' : 'fas fa-moon text-slate-700';
+        });
+    </script>
+</body>
+</html>
